@@ -1,0 +1,12 @@
+﻿<p>You're logged in!!</p>
+<h5>All registered users:</h5>
+<ul>
+    <li ng-repeat="user in vm.allUsers">    
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<script src="/grid.js"></script>
+<div id="jsGrid"></div> 
+<p><a href="#!/login" class="btn btn-primary">Logout</a></p>
